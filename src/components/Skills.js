@@ -30,13 +30,13 @@ export const Skills = () => {
         <section className="skill" id="skills">
             <Container>
                 <Row>
-                    <Col>
-                        <div className="skill-bx">
+                    <Col size={12}>
+                        <div className="skill-bx wow zoomIn">
                             <h2>
                                 Skills
                             </h2>
-                            <p>Kita akan mengembangkan berbagai skill kalian di POLINEMA</p>
-                            <Carousel responsive={responsive} infinite={true} className="skill-slider">
+                            <p>alkdhas0<br></br> Lumajang</p>
+                            <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
                                 <div className="item">
                                     <img src={meter1} alt="Image" />
                                     <h5>Teknik Rekayasa Otomotif</h5>

@@ -2,13 +2,16 @@ import { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { ArrowRightCircle } from "react-bootstrap-icons";
 import headerImg from "..//assets/img/header-img.svg";
+import 'animate.css';
+import TrackVisibility from 'react-on-screen';
 
 export const Banner = () => {
     const [loopNum, setLoopNum] = useState(0);
     const [isDeleting, setIsDeleting] = useState(false);
     const [text, setText] = useState('');
     const [delta, setDelta] = useState(300 - Math.random() * 100);
-    const toRotate = [ "Mahasiswa", "Politeknik", "Negeri Malang" ];
+    const [index, setIndex] = useState(1);
+    const toRotate = [ "Eksotik", "Lumajang"];
     const period = 2000;
   
     useEffect(() => {
@@ -32,11 +35,15 @@ export const Banner = () => {
   
       if (!isDeleting && updatedText === fullText) {
         setIsDeleting(true);
+        setIndex(prevIndex => prevIndex - 1);
         setDelta(period);
       } else if (isDeleting && updatedText === '') {
         setIsDeleting(false);
         setLoopNum(loopNum + 1);
+        setIndex(1);
         setDelta(500);
+      } else {
+        setIndex(prevIndex => prevIndex + 1);
       }
     }
 
@@ -45,13 +52,23 @@ export const Banner = () => {
             <Container>
                 <Row className="align-items-center">
                     <Col xs={12} md={6} xl={7}>
-                        <span className="tagline">Selamat Datang di website POLINEMA PSDKU Lumajang</span>
-                        <h1>{`Hi Saya adalah `}<span className="wrap">{text}</span></h1>
-                        <p>Hallo saya adalah mahasiswa Politeknik Negeri Malang PSDKU Lumajang Jurusan Teknologi Informasi</p>
-                        <button onClick={() => console.log('connect')}>Ayo kita sambungkan<ArrowRightCircle size={25} /></button>
+                        <TrackVisibility>
+                        {({ isVisible }) => 
+                          <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
+                            <span className="tagline">HARJALU 767</span>
+                            <h1>{`Selamat datang di website `}<span className="wrap">{text}</span></h1>
+                            <p>Website EksotikLumajang adalah website yang menyediakan berbagai informasi seputar kabupaten lumajang</p>
+                            <button onClick={() => console.log('connect')}>Gabung Sekarang<ArrowRightCircle size={25} /></button>
+                          </div>}
+                        </TrackVisibility>
                     </Col>
                     <Col xs={12} md={6} xl={5}>
-                        <img src={headerImg} alt="Headder Img" />
+                      <TrackVisibility>
+                      {({ isVisible }) =>
+                        <div className={isVisible ? "animate__animated animate__zoomIn" : ""}>
+                          <img src={headerImg} alt="Headder Img" />
+                        </div>}
+                      </TrackVisibility>
                     </Col>
                 </Row>    
             </Container>    
