@@ -43,15 +43,15 @@ export const NavBar = () =>{
             </Navbar.Toggle>
             <Navbar.Collapse id="basic-navbar-nav">
               <Nav className="me-auto">
-                <Nav.Link href="#home" className={activeLink === 'home' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('home')}>Home</Nav.Link>
-                <Nav.Link href="#skills" className={activeLink === 'skills' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('skills')}>Skills</Nav.Link>
-                <Nav.Link href="#projects" className={activeLink === 'projects' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('projects')}>Projects</Nav.Link>
+                <Nav.Link href="#home" className={activeLink === 'home' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('home')}>Beranda</Nav.Link>
+                <Nav.Link href="#skills" className={activeLink === 'skills' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('skills')}>Pemda</Nav.Link>
+                <Nav.Link href="#projects" className={activeLink === 'projects' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('projects')}>Destinasi</Nav.Link>
               </Nav>
               <span className="navbar-text">
                 <div className="social-icon">
                     <a href="#"><img src={NavIcon1} alt=""/></a>
-                    <a href="#"><img src={NavIcon2} alt=""/></a>
-                    <a href="#"><img src={NavIcon3} alt=""/></a>
+                    <a href="https://id-id.facebook.com/lumajangkab/"><img src={NavIcon2} alt="facebook"/></a>
+                    <a href="https://www.instagram.com/lumajang_kab/?hl=id"><img src={NavIcon3} alt="instagram"/></a>
                 </div>
                 <HashLink to='#connect'>
                   <button className="vvd" onClick={() => console.log('connect')}><span>Daftar</span></button>

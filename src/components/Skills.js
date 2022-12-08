@@ -33,32 +33,29 @@ export const Skills = () => {
                     <Col size={12}>
                         <div className="skill-bx wow zoomIn">
                             <h2>
-                                Skills
+                                Logo
                             </h2>
                             <p>alkdhas0<br></br> Lumajang</p>
                             <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
                                 <div className="item">
-                                    <img src={meter1} alt="Image" />
-                                    <h5>Teknik Rekayasa Otomotif</h5>
+                                    <img src={meter1} alt="image1" />
                                 </div>
                                 <div className="item">
-                                    <img src={meter2} alt="Image" />
-                                    <h5>Teknik Sipil</h5>
+                                    <img src={meter2} alt="image2" />
                                 </div>
                                 <div className="item">
-                                    <img src={meter3} alt="Image" />
+                                    <img src={meter3} alt="image3" />
                                     <h5>Akuntasi</h5>
                                 </div>
                                 <div className="item">
-                                    <img src={meter1} alt="Image" />
-                                    <h5>Teknologi Informasi</h5>
+                                    <img src={meter1} alt="image4" />
                                 </div>
                             </Carousel>
                         </div>
                     </Col>
                 </Row>
             </Container>
-            <img className="background-image-left" src={colorSharp} />
+            <img className="background-image-left" src={colorSharp} alt="colorSharp"/>
         </section>
     )
 }   
