@@ -9,7 +9,172 @@ import TrackVisibility from 'react-on-screen';
 
 export const Projects = () => {
 
-    const projects = [
+    const wisata = [
+        {
+            title: "Gunung Semeru",
+            description: "Design & Development",
+            imgUrl: projImg1,
+          },
+          {
+            title: "Business Startup",
+            description: "Design & Development",
+            imgUrl: projImg2,
+          },
+          {
+            title: "Business Startup",
+            description: "Design & Development",
+            imgUrl: projImg3,
+          },
+          {
+            title: "Business Startup",
+            description: "Design & Development",
+            imgUrl: projImg1,
+          },
+          {
+            title: "Business Startup",
+            description: "Design & Development",
+            imgUrl: projImg2,
+          },
+          {
+            title: "Business Startup",
+            description: "Design & Development",
+            imgUrl: projImg3,
+          },
+    ]
+
+    const hotel = [
+        {
+            title: "Business Startup",
+            description: "Design & Development",
+            imgUrl: projImg1,
+          },
+          {
+            title: "Business Startup",
+            description: "Design & Development",
+            imgUrl: projImg2,
+          },
+          {
+            title: "Business Startup",
+            description: "Design & Development",
+            imgUrl: projImg3,
+          },
+          {
+            title: "Business Startup",
+            description: "Design & Development",
+            imgUrl: projImg1,
+          },
+          {
+            title: "Business Startup",
+            description: "Design & Development",
+            imgUrl: projImg2,
+          },
+          {
+            title: "Business Startup",
+            description: "Design & Development",
+            imgUrl: projImg3,
+          },
+    ]
+
+    const lembaga = [
+        {
+            title: "Business Startup",
+            description: "Design & Development",
+            imgUrl: projImg1,
+          },
+          {
+            title: "Business Startup",
+            description: "Design & Development",
+            imgUrl: projImg2,
+          },
+          {
+            title: "Business Startup",
+            description: "Design & Development",
+            imgUrl: projImg3,
+          },
+          {
+            title: "Business Startup",
+            description: "Design & Development",
+            imgUrl: projImg1,
+          },
+          {
+            title: "Business Startup",
+            description: "Design & Development",
+            imgUrl: projImg2,
+          },
+          {
+            title: "Business Startup",
+            description: "Design & Development",
+            imgUrl: projImg3,
+          },
+    ]
+
+    const Kuliner = [
+        {
+            title: "Makan",
+            description: "Design & Development",
+            imgUrl: projImg1,
+          },
+          {
+            title: "Business Startup",
+            description: "Design & Development",
+            imgUrl: projImg2,
+          },
+          {
+            title: "Business Startup",
+            description: "Design & Development",
+            imgUrl: projImg3,
+          },
+          {
+            title: "Business Startup",
+            description: "Design & Development",
+            imgUrl: projImg1,
+          },
+          {
+            title: "Business Startup",
+            description: "Design & Development",
+            imgUrl: projImg2,
+          },
+          {
+            title: "Business Startup",
+            description: "Design & Development",
+            imgUrl: projImg3,
+          },
+    ]
+
+    const oleh = [
+        {
+            title: "Business Startup",
+            description: "Design & Development",
+            imgUrl: projImg1,
+          },
+          {
+            title: "Business Startup",
+            description: "Design & Development",
+            imgUrl: projImg2,
+          },
+          {
+            title: "Business Startup",
+            description: "Design & Development",
+            imgUrl: projImg3,
+          },
+          {
+            title: "Business Startup",
+            description: "Design & Development",
+            imgUrl: projImg1,
+          },
+          {
+            title: "Business Startup",
+            description: "Design & Development",
+            imgUrl: projImg2,
+          },
+          {
+            title: "Business Startup",
+            description: "Design & Development",
+            imgUrl: projImg3,
+          },
+    ]
+
+    const event = [
         {
             title: "Business Startup",
             description: "Design & Development",
@@ -43,7 +208,7 @@ export const Projects = () => {
     ]
 
     return (
-        <section className="project" id="projects">
+        <section className="project" id="destinasi">
             <Container>
                 <Row>
                     <Col size={12}>
@@ -51,7 +216,7 @@ export const Projects = () => {
                             {({ isVisible }) => 
                             <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                                     <h2>Destinasi Lokasi</h2>
-                                    <p>Berbagai macam destinasi lokasi yang terdapat di seputaran Lumajang</p>
+                                    <p>Berbagai macam destinasi lokasi yang terdapat di sekitaran kabupaten Lumajang</p>
                                 <Tab.Container id="projects-tabs" defaultActiveKey="first">
                                     <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
                                         <Nav.Item>
@@ -67,7 +232,7 @@ export const Projects = () => {
                                             <Nav.Link eventKey="fourth">Kuliner</Nav.Link>
                                         </Nav.Item>
                                         <Nav.Item>
-                                            <Nav.Link eventKey="fifth">Oleh - Oleh</Nav.Link>
+                                            <Nav.Link eventKey="fifth">Oleh - oleh</Nav.Link>
                                         </Nav.Item>
                                         <Nav.Item>
                                             <Nav.Link eventKey="sixth">Event</Nav.Link>
@@ -77,7 +242,7 @@ export const Projects = () => {
                                         <Tab.Pane eventKey="first">
                                             <Row>
                                                 {
-                                                    projects.map((project, index) => {
+                                                    wisata.map((project, index) => {
                                                         return (
                                                             <ProjectCard
                                                                 key={index}
@@ -91,7 +256,7 @@ export const Projects = () => {
                                         <Tab.Pane eventKey="second">
                                         <Row>
                                                 {
-                                                    projects.map((project, index) => {
+                                                    hotel.map((project, index) => {
                                                         return (
                                                             <ProjectCard
                                                                 key={index}
@@ -105,7 +270,7 @@ export const Projects = () => {
                                         <Tab.Pane eventKey="third">
                                         <Row>
                                                 {
-                                                    projects.map((project, index) => {
+                                                    lembaga.map((project, index) => {
                                                         return (
                                                             <ProjectCard
                                                                 key={index}
@@ -119,7 +284,7 @@ export const Projects = () => {
                                         <Tab.Pane eventKey="fourth">
                                         <Row>
                                                 {
-                                                    projects.map((project, index) => {
+                                                    Kuliner.map((project, index) => {
                                                         return (
                                                             <ProjectCard
                                                                 key={index}
@@ -133,7 +298,7 @@ export const Projects = () => {
                                         <Tab.Pane eventKey="fifth">
                                         <Row>
                                                 {
-                                                    projects.map((project, index) => {
+                                                    oleh.map((project, index) => {
                                                         return (
                                                             <ProjectCard
                                                                 key={index}
@@ -147,7 +312,7 @@ export const Projects = () => {
                                         <Tab.Pane eventKey="sixth">
                                         <Row>
                                                 {
-                                                    projects.map((project, index) => {
+                                                    event.map((project, index) => {
                                                         return (
                                                             <ProjectCard
                                                                 key={index}

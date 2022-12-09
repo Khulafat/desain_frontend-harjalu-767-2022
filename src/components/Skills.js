@@ -27,15 +27,15 @@ export const Skills = () => {
     };
 
     return (
-        <section className="skill" id="skills">
+        <section className="skill" id="lembagapemerintah">
             <Container>
                 <Row>
                     <Col size={12}>
                         <div className="skill-bx wow zoomIn">
                             <h2>
-                                Logo
+                                Lembaga Pemerintah
                             </h2>
-                            <p>alkdhas0<br></br> Lumajang</p>
+                            <p>Kabupaten Lumajang</p>
                             <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
                                 <div className="item">
                                     <img src={meter1} alt="image1" />
@@ -45,7 +45,6 @@ export const Skills = () => {
                                 </div>
                                 <div className="item">
                                     <img src={meter3} alt="image3" />
-                                    <h5>Akuntasi</h5>
                                 </div>
                                 <div className="item">
                                     <img src={meter1} alt="image4" />
