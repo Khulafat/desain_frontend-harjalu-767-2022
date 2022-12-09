@@ -1,10 +1,11 @@
 import { Container, Row, Col } from "react-bootstrap";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import polinema from "..//assets/img/polinema.png";
+import bpbd from "..//assets/img/bpbd.png";
 import lumajang from "..//assets/img/logo-lumajang.png";
-import harjalu from "..//assets/img/harjalu.png";
-import lumajangExotik from "..//assets/img/lumajangExotik.png";
+import sigempal from "..//assets/img/sigempal.png";
+import hidupKehutanan from "..//assets/img/hidupKehutanan.png";
+import kominfo from "..//assets/img/kominfo.png";
 
 export const Skills = () => {
     const responsive = {
@@ -38,16 +39,19 @@ export const Skills = () => {
                             <p>Kabupaten Lumajang</p>
                             <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
                                 <div className="item">
-                                    <img src={polinema} alt="image1" />
+                                    <img src={bpbd} alt="image1" />
                                 </div>
                                 <div className="item">
                                     <img src={lumajang} alt="image2" />
                                 </div>
                                 <div className="item">
-                                    <img src={harjalu} alt="image3" />
+                                    <img src={sigempal} alt="image3" />
                                 </div>
                                 <div className="item">
-                                    <img src={lumajangExotik} alt="image4" />
+                                    <img src={hidupKehutanan} alt="image4" />
+                                </div>
+                                <div className="item">
+                                    <img src={kominfo} alt="image4" />
                                 </div>
                             </Carousel>
                         </div>

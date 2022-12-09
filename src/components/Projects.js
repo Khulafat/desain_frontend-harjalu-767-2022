@@ -6,9 +6,18 @@ import kapasBiru from "../assets/img/Wisata/03 Air Terjun Kapas Biru.png";
 import puncakB29 from "../assets/img/Wisata/04 Puncak B29.png";
 import selokambang from "../assets/img/Wisata/05 Selokambang.png";
 import kumbolo from "../assets/img/Wisata/06 ranu kumbolo.png";
-import projImg1 from "../assets/img/project-img1.png";
-import projImg2 from "../assets/img/project-img2.png";
-import projImg3 from "../assets/img/project-img3.png";
+import omahNusantara from "../assets/img/Hotel/01 omah nusantara.png";
+import RRkost from "../assets/img/Hotel/02 RR kost syariah.png";
+import hotelPrima from "../assets/img/Hotel/03 hotel prima.png";
+import hotelMaharaja from "../assets/img/Hotel/04 hotel maharaja.png";
+import hotelLumajang from "../assets/img/Hotel/05 hotel lumajang.png";
+import griyaBunda from "../assets/img/Hotel/06 griya bunda.png";
+import kantorBupati from "../assets/img/Lembaga/01 Kantor Bupati.png";
+import KHAnasMachfud from "../assets/img/Lembaga/02 Masjid KH Anas Machfud.png";
+import drHaryoto from "../assets/img/Lembaga/03 Rumah Sakit dr Haryoto.png";
+import Perpus from "../assets/img/Lembaga/04 Perpustakaan Daerah.png";
+import Pengadilan from "../assets/img/Lembaga/05 Pengadilan Agama Lumajang.png";
+import dinasPerdagangan from "../assets/img/Lembaga/06 Dinas Perdagangan.png";
 import bananaPrince from "../assets/img/Kuliner/01 Banana Prince.png";
 import mieSemeru from "../assets/img/Kuliner/02 Mie Semeru.png";
 import ayamGeprekMakRumpit from "../assets/img/Kuliner/03 Ayam Geprek Mak Rumpit.png";
@@ -17,6 +26,10 @@ import waffelVision from "../assets/img/Kuliner/05 Waffel Vision Vista.png";
 import valeToast from "../assets/img/Kuliner/06 Vale Toast.png";
 import tapePisang from "../assets/img/Oleh/01 tape pisang.png";
 import kripikKulitPisang from "../assets/img/Oleh/02 kripik kulit pisang.png";
+import kripikSalak from "../assets/img/Oleh/03 kripik kulit salak.png";
+import keripikTalas from "../assets/img/Oleh/04 keripik talas.png";
+import rambakPisang from "../assets/img/Oleh/05 rambak pisang.png";
+import keripikPisang from "../assets/img/Oleh/06 keripik pisang jati arum.png";
 import Candil from "../assets/img/Event/01 Candil.png";
 import lumajangFashionCarnival from "../assets/img/Event/02 lumajang fashion carnival 2022.png";
 import balosNightCarnival from "../assets/img/Event/03 Balos Night Carnival.png";
@@ -63,67 +76,67 @@ export const Projects = () => {
 
     const hotel = [
         {
-            title: "Business Startup",
-            description: "Design & Development",
-            imgUrl: projImg1,
+            title: "Omah Nusantara Homestay",
+            description: "167, Jl. Serma Dohir No.167, Sumberagung, Sumberrejo, Kec. Senduro, Kabupaten Lumajang, Jawa Timur 67361",
+            imgUrl: omahNusantara,
           },
           {
-            title: "Business Startup",
-            description: "Design & Development",
-            imgUrl: projImg2,
+            title: "RR Kost Syariah",
+            description: "Gang dr. Ketut Masuk -+ 20 meter, Jl. Gajah Mada No.44, Kepuharjo, Kec. Lumajang, Kabupaten Lumajang, Jawa Timur 67316",
+            imgUrl: RRkost,
           },
           {
-            title: "Business Startup",
-            description: "Design & Development",
-            imgUrl: projImg3,
+            title: "Hotel Prima",
+            description: "jl. Ir. Soekarno Hatta No. 69, Sukodono, Biting Dua, Kutorenon, Kec. Lumajang, Kab. Lumajang, Jawa Timur 67352",
+            imgUrl: hotelPrima,
           },
           {
-            title: "Business Startup",
-            description: "Design & Development",
-            imgUrl: projImg1,
+            title: "Hotel Maharaja",
+            description: "Jl.Raya Klakah No.99,Curah Pakem,Kec.Klakah, Kab.Lumajang",
+            imgUrl: hotelMaharaja,
           },
           {
-            title: "Business Startup",
-            description: "Design & Development",
-            imgUrl: projImg2,
+            title: "Hotel Lumajang",
+            description: "Jalan Jendral Ahmad Yani N0.185, Tompokersan, Kec. Lumajang, Kab. Lumajang, Jawa Timur 67311",
+            imgUrl: hotelLumajang,
           },
           {
-            title: "Business Startup",
-            description: "Design & Development",
-            imgUrl: projImg3,
+            title: "Homestay Griya Bunda Family",
+            description: "Perumahan Grand ZamZam RKS, Jl. Brigjen Katamso No.7, Tompokersan, Kec. Lumajang, Kabupaten Lumajang, Jawa Timur 67316",
+            imgUrl: griyaBunda,
           },
     ]
 
     const lembaga = [
         {
-            title: "Business Startup",
-            description: "Design & Development",
-            imgUrl: projImg1,
+            title: "Kantor Bupati Lumajang ",
+            description: "Jl. Alun-Alun Utara No.7, Rogotrunan, Kec. Lumajang, Kabupaten Lumajang, Jawa Timur 67316",
+            imgUrl: kantorBupati,
           },
           {
-            title: "Business Startup",
-            description: "Design & Development",
-            imgUrl: projImg2,
+            title: "Masjid Agung K.H. Anas Machfudz LTM.NU",
+            description: "Jl. Abu Bakar Kelurahan No.1, Citrodiwangsan, Ditotrunan, Kec. Lumajang, Kabupaten Lumajang, Jawa Timur 67313",
+            imgUrl: KHAnasMachfud,
           },
           {
-            title: "Business Startup",
-            description: "Design & Development",
-            imgUrl: projImg3,
+            title: "RSUD Dr. Haryoto Lumajang",
+            description: "Jl. Jendral Ahmad Yani No.5, Tompokersan, Kec. Lumajang, Kabupaten Lumajang, Jawa Timur 67316",
+            imgUrl: drHaryoto,
           },
           {
-            title: "Business Startup",
-            description: "Design & Development",
-            imgUrl: projImg1,
+            title: "Perpustakaan Mula Malurung",
+            description: "Jl. Jendral Ahmad Yani No.5, Tompokersan, Kec. Lumajang, Kabupaten Lumajang, Jawa Timur 67316 ",
+            imgUrl: Perpus,
           },
           {
-            title: "Business Startup",
-            description: "Design & Development",
-            imgUrl: projImg2,
+            title: "Pengadilan Agama Lumajang",
+            description: "Jalan Soekarno Hatta No 11, Sukodono, Biting Dua, Kutorenon, Kec. Lumajang, Kabupaten Lumajang, Jawa Timur 67352",
+            imgUrl: Pengadilan,
           },
           {
-            title: "Business Startup",
-            description: "Design & Development",
-            imgUrl: projImg3,
+            title: "Dinas Perdagangan Kabupaten Lumajang",
+            description: "Jl. Jendral Ahmad Yani No.209, Sukodono, Kutorenon, Kec. Sukodono, Kabupaten Lumajang, Jawa Timur 67352",
+            imgUrl: dinasPerdagangan,
           },
     ]
 
@@ -172,24 +185,24 @@ export const Projects = () => {
             imgUrl: kripikKulitPisang,
           },
           {
-            title: "Business Startup",
-            description: "Design & Development",
-            imgUrl: projImg3,
+            title: "Kripik Salak",
+            description: "Lumajang-Pronojiwo, Jawa Timur",
+            imgUrl: kripikSalak,
           },
           {
-            title: "Business Startup",
-            description: "Design & Development",
-            imgUrl: projImg1,
+            title: "Kripik Talas",
+            description: "Dusun Tulus Rejo I, RT.03/RW.02, Dusun Tulusrejo, Tempeh Lor, Kec. Tempeh, Kabupaten Lumajang, Jawa Timur 67371",
+            imgUrl: keripikTalas,
           },
           {
-            title: "Business Startup",
-            description: "Design & Development",
-            imgUrl: projImg2,
+            title: "Rambak Pisang",
+            description: "Dusun Tulus Rejo I, RT.03/RW.02, Dusun Tulusrejo, Tempeh Lor, Kec. Tempeh, Kabupaten Lumajang, Jawa Timur 67371",
+            imgUrl: rambakPisang,
           },
           {
-            title: "Business Startup",
-            description: "Design & Development",
-            imgUrl: projImg3,
+            title: "Kripik pisang jati arum",
+            description: " jl. mayor jendral sukartiko, no.240A, jogotrunan, kec lumajang ,kabupaten lumajang,jawa timur",
+            imgUrl: keripikPisang,
           },
     ]
 
@@ -215,7 +228,7 @@ export const Projects = () => {
             imgUrl: festivalBanjirTahu,
           },
           {
-            title: "Jaran Kencak Glow in the Dark/Pawai Jaran Kencak (Rangkaian Harjalu ke-764)",
+            title: "Pawai Jaran Kencak",
             description: "Depan Pendopo Arya Wiraraja, Lumajang",
             imgUrl: pawaiJaranKencak,
           },

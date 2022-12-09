@@ -56,7 +56,7 @@ export const Banner = () => {
                           <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                             <span className="tagline">HARJALU 767</span>
                             <h1>{`Selamat datang di website `}<span className="wrap">{text}</span></h1>
-                            <p>Lumajang Exotic adalah website yang menyediakan berbagai informasi seputaran kabupaten lumajang</p>
+                            <p>Lumajang Eksotic adalah website yang menyediakan berbagai informasi seputaran kabupaten lumajang</p>
                           </div>}
                         </TrackVisibility>
                     </Col>

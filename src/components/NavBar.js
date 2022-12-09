@@ -38,7 +38,7 @@ export const NavBar = () =>{
             <Navbar.Brand href="#home">
               <img src={Logo} alt="Logo"/>
               <link href="logo_light.png" rel="icon" media="(prefers-color-scheme: light)" />
-    <link href="logo_dark.png" rel="icon" media="(prefers-color-scheme: dark)" />
+              <link href="logo_dark.png" rel="icon" media="(prefers-color-scheme: dark)" />
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav">
               <span className="navbar-toggler-icon"></span>
