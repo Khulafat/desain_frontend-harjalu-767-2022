@@ -1,10 +1,10 @@
 import { Container, Row, Col } from "react-bootstrap";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import meter1 from "..//assets/img/meter1.svg";
-import meter2 from "..//assets/img/meter2.svg";
-import meter3 from "..//assets/img/meter3.svg";
-import colorSharp from "..//assets/img/color-sharp.png";
+import polinema from "..//assets/img/polinema.png";
+import lumajang from "..//assets/img/logo-lumajang.png";
+import harjalu from "..//assets/img/harjalu.png";
+import lumajangExotik from "..//assets/img/lumajangExotik.png";
 
 export const Skills = () => {
     const responsive = {
@@ -27,7 +27,7 @@ export const Skills = () => {
     };
 
     return (
-        <section className="skill" id="lembagapemerintah">
+        <section className="skill" id="skills">
             <Container>
                 <Row>
                     <Col size={12}>
@@ -38,23 +38,22 @@ export const Skills = () => {
                             <p>Kabupaten Lumajang</p>
                             <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
                                 <div className="item">
-                                    <img src={meter1} alt="image1" />
+                                    <img src={polinema} alt="image1" />
                                 </div>
                                 <div className="item">
-                                    <img src={meter2} alt="image2" />
+                                    <img src={lumajang} alt="image2" />
                                 </div>
                                 <div className="item">
-                                    <img src={meter3} alt="image3" />
+                                    <img src={harjalu} alt="image3" />
                                 </div>
                                 <div className="item">
-                                    <img src={meter1} alt="image4" />
+                                    <img src={lumajangExotik} alt="image4" />
                                 </div>
                             </Carousel>
                         </div>
                     </Col>
                 </Row>
             </Container>
-            <img className="background-image-left" src={colorSharp} alt="colorSharp"/>
         </section>
     )
 }   

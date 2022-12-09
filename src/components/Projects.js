@@ -1,9 +1,11 @@
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
-import colorSharp2 from "../assets/img/color-sharp2.png";
+import Semeru from "../assets/img/Wisata/01 Gunung Semeru.png";
+import Senduro from "../assets/img/Wisata/02 Antrukan Senduro.png"
 import projImg1 from "../assets/img/project-img1.png";
 import projImg2 from "../assets/img/project-img2.png";
 import projImg3 from "../assets/img/project-img3.png";
+import Candil from "../assets/img/Event/01 - Candil.png"
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 
@@ -12,13 +14,13 @@ export const Projects = () => {
     const wisata = [
         {
             title: "Gunung Semeru",
-            description: "Design & Development",
-            imgUrl: projImg1,
+            description: "Ngampo, Pasrujambe, Kec. Pasrujambe, Kabupaten Lumajang, Jawa Timur",
+            imgUrl: Semeru,
           },
           {
-            title: "Business Startup",
-            description: "Design & Development",
-            imgUrl: projImg2,
+            title: "Antrukan Menjangan Senduro",
+            description: "Krajan, Wonocepokoayu, Kec. Senduro, Kabupaten Lumajang, Jawa Timur 67361",
+            imgUrl: Senduro,
           },
           {
             title: "Business Startup",
@@ -176,9 +178,9 @@ export const Projects = () => {
 
     const event = [
         {
-            title: "Business Startup",
-            description: "Design & Development",
-            imgUrl: projImg1,
+            title: "Candil",
+            description: "Candipuro - Lumajang",
+            imgUrl: Candil,
           },
           {
             title: "Business Startup",
@@ -208,7 +210,7 @@ export const Projects = () => {
     ]
 
     return (
-        <section className="project" id="destinasi">
+        <section className="project" id="projects">
             <Container>
                 <Row>
                     <Col size={12}>
@@ -232,7 +234,7 @@ export const Projects = () => {
                                             <Nav.Link eventKey="fourth">Kuliner</Nav.Link>
                                         </Nav.Item>
                                         <Nav.Item>
-                                            <Nav.Link eventKey="fifth">Oleh - oleh</Nav.Link>
+                                            <Nav.Link eventKey="fifth">Oleh - Oleh</Nav.Link>
                                         </Nav.Item>
                                         <Nav.Item>
                                             <Nav.Link eventKey="sixth">Event</Nav.Link>
@@ -240,7 +242,7 @@ export const Projects = () => {
                                     </Nav>
                                     <Tab.Content id="slideInUp" className={isVisible ? "animate__animated animate__slideInUp" : ""}>
                                         <Tab.Pane eventKey="first">
-                                            <Row>
+                                        <Row>
                                                 {
                                                     wisata.map((project, index) => {
                                                         return (
@@ -330,7 +332,6 @@ export const Projects = () => {
                     </Col>
                 </Row>
             </Container>
-            <img className="background-image-right" src={colorSharp2} alt="colorSharp2"></img>
         </section>
     )
 }

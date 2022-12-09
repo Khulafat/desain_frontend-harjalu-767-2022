@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Nav, Navbar, Container } from "react-bootstrap";
-import Logo from '../assets/img/logo.svg';
+import Logo from '../assets/img/logo_d.png';
 import NavIcon1 from '../assets/img/nav-icon1.svg';
 import NavIcon2 from '../assets/img/nav-icon2.svg';
 import NavIcon3 from '../assets/img/nav-icon3.svg';
@@ -35,17 +35,19 @@ export const NavBar = () =>{
       <Router>
         <Navbar expand="lg" className={scrolled ? "scrolled": ""}>
           <Container>
-            <Navbar.Brand href="#beranda">
-              <img src={Logo} alt="Lumajang Exotic"/>
+            <Navbar.Brand href="#home">
+              <img src={Logo} alt="Logo"/>
+              <link href="logo_light.png" rel="icon" media="(prefers-color-scheme: light)" />
+    <link href="logo_dark.png" rel="icon" media="(prefers-color-scheme: dark)" />
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav">
               <span className="navbar-toggler-icon"></span>
             </Navbar.Toggle>
             <Navbar.Collapse id="basic-navbar-nav">
               <Nav className="me-auto">
-                <Nav.Link href="#beranda" className={activeLink === 'beranda' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('beranda')}>Beranda</Nav.Link>
-                <Nav.Link href="#lembagapemerintah" className={activeLink === 'lembagapemerintah' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('lembagapemerintah')}>Lembaga Pemerintah</Nav.Link>
-                <Nav.Link href="#destinasi" className={activeLink === 'destinasi' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('destinasi')}>Destinasi</Nav.Link>
+                <Nav.Link href="#home" className={activeLink === 'home' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('home')}>Beranda</Nav.Link>
+                <Nav.Link href="#skills" className={activeLink === 'skills' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('skills')}>Lembaga Pemerintah</Nav.Link>
+                <Nav.Link href="#projects" className={activeLink === 'projects' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('projects')}>Destinasi</Nav.Link>
               </Nav>
               <span className="navbar-text">
                 <div className="social-icon">
